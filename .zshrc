@@ -206,6 +206,7 @@ source $ZSH/oh-my-zsh.sh
 test -d ~/.linuxbrew && eval $(~/.linuxbrew/bin/brew shellenv)
 test -d /home/linuxbrew/.linuxbrew && eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
 alias c=clear
+alias ag="alias | grep"
 alias atom="snap run atom"
 alias -g L="| less"
 alias -g G="| grep"
@@ -213,6 +214,9 @@ alias -g X="| xclip"
 alias D="pwd | xclip"
 alias cm="claws-mail"
 
+function alarm {
+    sleep $1 ; while true; do spd-say -w $2 ; done
+}
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 (( ! ${+functions[p10k]} )) || p10k finalize
