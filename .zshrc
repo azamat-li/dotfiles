@@ -214,9 +214,15 @@ alias -g X="| xclip"
 alias D="pwd | xclip"
 alias cm="claws-mail"
 
-function alarm {
-    sleep $1 ; while true; do spd-say -w $2 ; done
+function remind {
+    sleep $1 ; for i in 1 2 3 ; do spd-say -w $2 ; done
 }
+
+
+function checkinternet {
+while ping -c1 google.com &>/dev/null; do echo "internet is ok `date`"; spd-say -w 'internet is available' ; done
+}
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 (( ! ${+functions[p10k]} )) || p10k finalize
