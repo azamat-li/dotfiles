@@ -1,0 +1,29 @@
+{
+  "Import Vue test utils mount": {
+    "prefix": ["im", "import-mount"],
+    "body": "import { mount } from '@vue/test-utils'",
+    "description": "Imports Vue test utils mount "
+  },
+  "Scaffold Jest Test Suit": {
+    "prefix": ["st", "sjts"],
+    "body": [
+      "import  ${1:Component}  from '@/Components/${1:Component}' ",
+      "",
+      "    describe('${1:Component}',() => {",
+      "         it('${2:When }', () => {",
+      "",
+      "         const wrapper = mount(${1:Component})",
+      "",
+      "})",
+      "})"
+    ],
+    "description": "Scaffold Jest Test Suit"
+  },
+  "Scaffold  Jest Find Function": {
+    "prefix": "sf",
+    "body": [
+      "    const ${1:element} = wrapper.find('[data-test-id=\"${1:element}\"]');"
+    ],
+    "description": "Scaffold  Jest Find Function"
+  }
+}

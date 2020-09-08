@@ -6,12 +6,13 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+# export PATH=$HOME/bin:/usr/local/bin:~/bin:$PATH
 
 # cdpath
 typeset -U path cdpath fpath
 setopt auto_cd
 cdpath=(~/ ~/Study $HOME/scripts /mnt $HOME/Study ~/Work ~/.oh-my-zsh ~/.oh-my-zsh/plugins ~/.oh-my-zsh/custom/plugins)
+export PATH=/usr/local/bin:~/bin:$PATH
 
 source ~/.zplug/init.zsh
 zstyle ':completion:*' group-name ''
