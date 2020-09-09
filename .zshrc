@@ -173,7 +173,7 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(debian history git git-extras gh vue npm heroku yarn json-server vscode )
+plugins=(debian history git git-extras gh vue npm heroku yarn json-server vscode googler )
 
 source $ZSH/oh-my-zsh.sh
 
@@ -213,6 +213,8 @@ alias -g G="| grep"
 alias -g X="| xclip"
 alias D="pwd | xclip"
 alias cm="claws-mail"
+alias grN="googler  -l en -c com --from 01/01/2019"
+
 
 function remind {
     sleep $1 ; for i in 1 2 3 ; do spd-say -w $2 ; done
