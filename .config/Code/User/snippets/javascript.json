@@ -7,10 +7,10 @@
   "Scaffold Jest Test Suit": {
     "prefix": ["st", "sjts"],
     "body": [
-      "import  ${1:Component}  from '@/Components/${1:Component}' ",
+      "import  ${1:Component}  from '@/components/${1:Component}.vue' ",
       "",
       "    describe('${1:Component}',() => {",
-      "         it('${2:When }', () => {",
+      "         it('${2:When are given, they are correctly displayed}', () => {",
       "",
       "         const wrapper = mount(${1:Component})",
       "",
@@ -22,8 +22,9 @@
   "Scaffold  Jest Find Function": {
     "prefix": "sf",
     "body": [
-      "    const ${1:element} = wrapper.find('[data-test-id=\"${1:element}\"]');"
+      "    const ${1:element} = wrapper.find('[data-testid=\"${1:element}\"]').element.textContent;"
     ],
     "description": "Scaffold  Jest Find Function"
-  }
+  },
+
 }
