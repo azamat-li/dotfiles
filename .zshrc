@@ -17,7 +17,7 @@ source ~/.zplug/init.zsh
 zstyle ':completion:*' group-name ''
 zstyle ':completion:*:descriptions' format %d
 zstyle ':completion:*:descriptions' format %B%d%b
-zstyle ':completion:*:complete:(cd|pushd):*' tag-order \
+zstyle ''\a'"etion:*:complete:(cd|pushd):*' tag-order \
 	'local-directories named-directories'
 
 
@@ -214,6 +214,7 @@ alias -g X="| xclip"
 alias D="pwd | xclip"
 alias cm="claws-mail"
 alias grN="googler  -l en -c com --from 01/01/2019"
+alias -g B="; echo -en '\a'"
 
 
 function remind {
