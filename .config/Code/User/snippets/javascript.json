@@ -1,11 +1,11 @@
 {
   "Import Vue test utils mount": {
-    "prefix": ["im", "import-mount"],
+    "prefix": ["jm", "import-mount"],
     "body": "import { mount } from '@vue/test-utils'",
     "description": "Imports Vue test utils mount "
   },
   "Scaffold Jest Test Suit": {
-    "prefix": ["st", "sjts"],
+    "prefix": ["jt"],
     "body": [
       "import  ${1:Component}  from '@/components/${1:Component}.vue' ",
       "",
@@ -20,11 +20,23 @@
     "description": "Scaffold Jest Test Suit"
   },
   "Scaffold  Jest Find Function": {
-    "prefix": "sf",
+    "prefix": "jf",
     "body": [
       "    const ${1:element} = wrapper.find('[data-testid=\"${1:element}\"]').element.textContent;"
     ],
     "description": "Scaffold  Jest Find Function"
   },
+  "Imports & mocks axios service": {
+    "prefix": "jma",
+    "body": [
+      "import { ${1:FunctionToTest} } from '@/services/${2:axios}'",
+      "",
+      "jest.mock('@/services/${2:axios}')",
+      "${0}"
+
+    ],
+    "description": "Imports & mocks axios service"
+  }
+
 
 }
