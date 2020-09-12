@@ -11,7 +11,7 @@ export PATH=$PATH:/snap/bin:$HOME/bin:/usr/local/bin
 # cdpath
 typeset -U path cdpath fpath
 setopt auto_cd
-cdpath=(~/ ~/Study $HOME/scripts /mnt $HOME/Study ~/Work ~/.oh-my-zsh ~/.oh-my-zsh/plugins ~/.oh-my-zsh/custom/plugins)
+cdpath=(~/ ~/Open-source-projects ~/Study $HOME/scripts /mnt $HOME/Study ~/Work ~/.oh-my-zsh ~/.oh-my-zsh/plugins ~/.oh-my-zsh/custom/plugins)
 
 source ~/.zplug/init.zsh
 zstyle ':completion:*' group-name ''
@@ -229,3 +229,13 @@ while ping -c1 google.com &>/dev/null; do echo "internet is ok `date`"; spd-say 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 (( ! ${+functions[p10k]} )) || p10k finalize
+
+
+ export NVM_DIR=~/.nvm
+  [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
+
+
+export JAVA_HOME=/usr/lib/jvm/java-1.11.0-openjdk-amd64
+

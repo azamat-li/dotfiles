@@ -22,7 +22,8 @@
     {
       "language": "javascript",
       "autoFix": true
-    }
+    },
+    { "language": "typescript", "autoFix": true }
   ],
   "eslint.autoFixOnSave": true,
   "editor.formatOnSave": true,
@@ -38,5 +39,7 @@
     "source.fixAll.eslint": true
   },
   "editor.snippetSuggestions": "top",
-  "emmet.extensionsPath": "~/.config/Code/User/snippets"
+  "emmet.extensionsPath": "~/.config/Code/User/snippets",
+  "editor.find.cursorMoveOnType": true,
+  "editor.fontWeight": 500
 }
