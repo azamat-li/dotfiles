@@ -234,7 +234,6 @@ while ping -c1 google.com &>/dev/null; do echo "internet is ok `date`"; spd-say 
  export NVM_DIR=~/.nvm
   [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 export PATH="$HOME/.jenv/bin:$PATH"
-eval "$(jenv init -)"
 
 
 export JAVA_HOME=/usr/lib/jvm/java-1.11.0-openjdk-amd64
