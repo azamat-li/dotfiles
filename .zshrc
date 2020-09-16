@@ -208,8 +208,6 @@ test -d /home/linuxbrew/.linuxbrew && eval $(/home/linuxbrew/.linuxbrew/bin/brew
 alias c=clear
 alias ag="alias | grep"
 alias atom="snap run atom"
-alias -g L="| less"
-alias -g G="| grep"
 alias -g X="| xclip"
 alias D="pwd | xclip"
 alias cm="claws-mail"
