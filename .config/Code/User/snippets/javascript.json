@@ -33,10 +33,19 @@
       "",
       "jest.mock('@/services/${2:axios}')",
       "${0}"
-
     ],
     "description": "Imports & mocks axios service"
+  },
+  "Default prettier configs": {
+    "prefix": "prt",
+    "body": [
+      "module.exports = {",
+      "  singleQuote: true,",
+      "  semi: false,",
+      "  trailingComma: 'none'",
+      "}",
+      ""
+    ],
+    "description": "Default prettier configs"
   }
-
-
 }

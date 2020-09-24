@@ -11,7 +11,7 @@ export PATH=$PATH:/snap/bin:$HOME/bin:/usr/local/bin
 # cdpath
 typeset -U path cdpath fpath
 setopt auto_cd
-cdpath=(~/ ~/Documents/Hobby/Quran/  ~/Open-source-projects ~/Study $HOME/scripts /mnt $HOME/Study ~/Work ~/.oh-my-zsh ~/.oh-my-zsh/plugins ~/.oh-my-zsh/custom/plugins)
+cdpath=(~/ ~/Private-projects/   ~/Open-source-projects ~/Study $HOME/scripts /mnt $HOME/Study ~/Work ~/.oh-my-zsh ~/.oh-my-zsh/plugins ~/.oh-my-zsh/custom/plugins)
 
 source ~/.zplug/init.zsh
 zstyle ':completion:*' group-name ''
