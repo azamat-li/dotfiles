@@ -1,0 +1,44 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+  {
+    "key": "ctrl+[Backquote]",
+    "command": "workbench.action.terminal.toggleTerminal"
+  },
+  {
+    "key": "ctrl+shift+/",
+    "command": "editor.foldRecursively"
+  },
+  {
+    "key": "ctrl+shift+[Backslash]",
+    "command": "editor.unfoldRecursively"
+  },
+  {
+    "key": "ctrl+s ctrl+t",
+    "command": "git.stageAll"
+  },
+  {
+    "key": "ctrl+s ctrl+s",
+    "command": "workbench.action.files.save"
+  },
+  {
+    "key": "ctrl+s",
+    "command": "-workbench.action.files.save"
+  },
+  {
+    "key": "alt+t",
+    "command": "editor.action.transformToTitlecase"
+  },
+  {
+    "key": "alt+delete",
+    "command": "-notebook.cell.clearOutputs",
+    "when": "notebookCellHasOutputs && notebookEditorFocused && !inputFocus"
+  },
+  {
+    "key": "alt+insert",
+    "command": "copy-word.copy"
+  },
+  {
+    "key": "alt+delete",
+    "command": "copy-word.cut"
+  }
+]
