@@ -41,5 +41,8 @@
   "editor.snippetSuggestions": "top",
   "emmet.extensionsPath": "~/.config/Code/User/snippets",
   "editor.find.cursorMoveOnType": true,
-  "editor.fontWeight": 500
+"editor.fontWeight": 500,
+"breadcrumbs.enabled": true,
+"editor.renderControlCharacters": true,
+"editor.minimap.enabled": false
 }

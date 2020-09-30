@@ -13,7 +13,7 @@
     "command": "editor.unfoldRecursively"
   },
   {
-    "key": "ctrl+s ctrl+t",
+    "key": "alt+s alt+t",
     "command": "git.stageAll"
   },
   {
@@ -40,5 +40,13 @@
   {
     "key": "alt+delete",
     "command": "copy-word.cut"
+  },
+  {
+    "key": "alt+g alt+g",
+    "command": "git.commitAll"
+  },
+  {
+    "key": "alt+g alt+a",
+    "command": "git.commitAllAmend"
   }
 ]
