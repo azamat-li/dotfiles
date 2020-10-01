@@ -42,7 +42,7 @@
   "emmet.extensionsPath": "~/.config/Code/User/snippets",
   "editor.find.cursorMoveOnType": true,
   "editor.fontFamily": "'source code pro",
-  "editor.fontWeight": 600,
+  "editor.fontWeight": 700,
   "editor.fontSize": 16,
   "breadcrumbs.enabled": true,
   "editor.renderControlCharacters": true,
