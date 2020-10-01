@@ -41,10 +41,11 @@
   "editor.snippetSuggestions": "top",
   "emmet.extensionsPath": "~/.config/Code/User/snippets",
   "editor.find.cursorMoveOnType": true,
-"editor.fontWeight": 500,
-"breadcrumbs.enabled": true,
-"editor.renderControlCharacters": true,
-"editor.minimap.enabled": false,
-"git.confirmSync": false,
-"git.autofetch": true
+  "editor.fontFamily": "'source code pro",
+  "editor.fontWeight": 400,
+  "breadcrumbs.enabled": true,
+  "editor.renderControlCharacters": true,
+  "editor.minimap.enabled": false,
+  "git.confirmSync": false,
+  "git.autofetch": true
 }
