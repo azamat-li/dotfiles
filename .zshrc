@@ -209,11 +209,11 @@ alias c=clear
 alias ag="alias | grep"
 alias atom="snap run atom"
 alias -g X="| xclip"
+alias -g B="; echo -en '\a'"
 alias D="pwd | xclip"
 alias cm="claws-mail"
 alias grN="googler  -l en -c com --from 01/01/2019"
-alias -g B="; echo -en '\a'"
-
+alias ss='spd-say -w'
 
 function remind {
     sleep $1 ; for i in 1 2 3 ; do spd-say -w $2 ; done
