@@ -236,3 +236,12 @@ export PATH="$HOME/.jenv/bin:$PATH"
 
 export JAVA_HOME=/usr/lib/jvm/java-1.11.0-openjdk-amd64
 
+function chpwd {
+      pwd > ~/.last_dir
+  }
+
+
+if
+[[ -f ~/.last_dir ]]; then
+      cd $(cat ~/.last_dir)
+      fi
