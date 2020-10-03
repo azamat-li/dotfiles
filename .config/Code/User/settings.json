@@ -44,6 +44,7 @@
   "editor.fontFamily": "'source code pro",
   "editor.fontWeight": 700,
   "editor.fontSize": 16,
+  "editor.formatOnSaveMode": "file",
   "breadcrumbs.enabled": true,
   "editor.renderControlCharacters": true,
   "editor.minimap.enabled": false,
