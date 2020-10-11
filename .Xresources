@@ -39,7 +39,7 @@
 
 !! URxvt Appearance
 URxvt.allow_bold:           true
-URxvt*font: xft:source code pro:regular:pixelsize=18
+URxvt*font: xft:source code pro:regular:pixelsize=17
 URxvt*imFont: xft:source code pro:regular:pixelsize=18
 URxvt*boldFont: xft:source code pro:semibold:pixelsize=18
 URxvt*italicFont: xft:source code pro:italic:pixelsize=18
@@ -57,6 +57,5 @@ URxvt.scrollBar_right: false
 URxvt.urgentOnBell: true
 URxvt.depth: 24
 URxvt.iso14755: false
-
-
 URxvt.perl-ext-common: ...,tabbed,...
+
