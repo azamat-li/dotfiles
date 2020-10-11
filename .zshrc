@@ -173,7 +173,7 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(debian history git git-flow git-extras gh vue npm heroku yarn json-server vscode googler common-aliases)
+plugins=(debian history git git-flow git-extras gh vue npm heroku yarn json-server vscode googler common-aliases travis docker docker-compose )
 
 source $ZSH/oh-my-zsh.sh
 
@@ -214,6 +214,8 @@ alias D="pwd | xclip"
 alias cm="claws-mail"
 alias grN="googler  -l en -c com --from 01/01/2019"
 alias ss='spd-say -w'
+alias docker="sudo docker"
+alias docker-compose="sudo docker-compose"
 
 function remind {
     sleep $1 ; for i in 1 2 3 ; do spd-say -w $2 ; done
@@ -245,3 +247,6 @@ if
 [[ -f ~/.last_dir ]]; then
       cd $(cat ~/.last_dir)
       fi
+
+# added by travis gem
+[ ! -s /home/ali/.travis/travis.sh ] || source /home/ali/.travis/travis.sh
