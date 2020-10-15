@@ -214,8 +214,6 @@ alias D="pwd | xclip"
 alias cm="claws-mail"
 alias grN="googler  -l en -c com --from 01/01/2019"
 alias ss='spd-say -w'
-alias docker="sudo docker"
-alias docker-compose="sudo docker-compose"
 
 function remind {
     sleep $1 ; for i in 1 2 3 ; do spd-say -w $2 ; done

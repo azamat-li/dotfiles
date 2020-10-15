@@ -49,5 +49,15 @@
   "editor.renderControlCharacters": true,
   "editor.minimap.enabled": false,
   "git.confirmSync": false,
-  "git.autofetch": true
+  "git.autofetch": true,
+  "vim.easymotionMarkerBackgroundColor": "#7e57c2",
+  "vim.easymotionMarkerYOffset": 4,
+  "vim.normalModeKeyBindingsNonRecursive": [
+      {
+          "before": [" "],
+          "after": ["leader", "leader", "leader", "b", "d", "w"],
+      }
+  ],
+  "vim.easymotion": true,
+  "vim.hlsearch": true,
 }
