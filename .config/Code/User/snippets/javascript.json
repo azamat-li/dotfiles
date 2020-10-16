@@ -35,18 +35,5 @@
       "${0}"
     ],
     "description": "Imports & mocks axios service"
-  },
-  "Default prettier configs": {
-    "prefix": "prt",
-    "body": [
-      "module.exports = {",
-      "  singleQuote: true,",
-      "  semi: false,",
-      "  trailingComma: 'none'",
-      "  printWidth: 50",
-      "}",
-      ""
-    ],
-    "description": "Default prettier configs"
   }
 }
