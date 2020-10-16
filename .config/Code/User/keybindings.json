@@ -57,7 +57,7 @@
     "key": "ctrl+b",
     "command": "-workbench.action.toggleSidebarVisibility"
   },
-{
+  {
     "key": "ctrl+w",
     "command": "-workbench.action.closeWindow",
     "when": "!editorIsOpen && !multipleEditorGroups"
@@ -65,13 +65,21 @@
   {
     "key": "ctrl+shift+w",
     "command": "-workbench.action.closeWindow"
-},
-{
+  },
+  {
     "key": "ctrl+alt+w",
     "command": "workbench.action.closeActiveEditor"
-},
-{
+  },
+  {
     "key": "ctrl+w",
     "command": "-workbench.action.closeActiveEditor"
-}
+  },
+  {
+    "key": "alt+t alt+t",
+    "command": "workbench.action.showAllSymbols"
+  },
+  {
+    "key": "ctrl+t",
+    "command": "-workbench.action.showAllSymbols"
+  }
 ]

@@ -9,6 +9,13 @@
       "  },"
     ],
     "description": "Scaffolds Linting For Husky"
+  },
+  "Default Commitlint Config Generator": {
+    "prefix": "cl",
+    "body": [
+      "module.exports = {extends: ['@commitlint/config-conventional']}"
+    ],
+    "description": "Default Commitlint Config Generator"
   }
 
 {

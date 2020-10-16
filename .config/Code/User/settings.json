@@ -9,24 +9,23 @@
 
   "editor.detectIndentation": false,
 
-  "vetur.validation.template": false,
   "eslint.validate": [
     {
-      "language": "vue",
-      "autofix": true
+      "language": "vue"
     },
     {
-      "language": "html",
-      "autoFix": true
+      "language": "html"
     },
     {
-      "language": "javascript",
-      "autoFix": true
+      "language": "javascript"
     },
-    { "language": "typescript", "autoFix": true }
+    { "language": "typescript"  }
   ],
-  "eslint.autoFixOnSave": true,
   "editor.formatOnSave": true,
+  "vetur.validation.template": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
   "emmet.includeLanguages": {
     "vue": "html"
   },
@@ -35,9 +34,6 @@
   "javascript.updateImportsOnFileMove.enabled": "always",
   "git.enableSmartCommit": true,
   "files.autoSave": "afterDelay",
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  },
   "editor.snippetSuggestions": "top",
   "emmet.extensionsPath": "~/.config/Code/User/snippets",
   "editor.find.cursorMoveOnType": true,
