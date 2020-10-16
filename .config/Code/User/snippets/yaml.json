@@ -1,0 +1,13 @@
+{
+    "Prettier Default Config": {
+        "prefix": "prt",
+        "body": [
+          "semi: false",
+          "tabWidth: 2",
+          "singleQuote: true",
+          "trailingComma: 'none'",
+          "printWidth: 50"
+        ],
+        "description": "Prettier Default Config"
+      }
+}

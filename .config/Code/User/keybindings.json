@@ -101,5 +101,21 @@
     "key": "ctrl+k ctrl+i",
     "command": "-editor.action.showHover",
     "when": "editorTextFocus"
+},
+{
+    "key": "ctrl+alt+h",
+    "command": "editor.action.startFindReplaceAction"
+},
+{
+    "key": "ctrl+h",
+    "command": "-editor.action.startFindReplaceAction"
+},
+{
+    "key": "ctrl+shift+alt+h",
+    "command": "workbench.action.replaceInFiles"
+},
+{
+    "key": "ctrl+shift+h",
+    "command": "-workbench.action.replaceInFiles"
 }
 ]
