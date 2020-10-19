@@ -55,5 +55,7 @@
       }
   ],
   "vim.easymotion": true,
-  "vim.hlsearch": true,
+"vim.hlsearch": true,
+"vetur.format.defaultFormatter.html": "none",
+"vim.camelCaseMotion.enable": true,
 }

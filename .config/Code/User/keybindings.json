@@ -117,5 +117,17 @@
 {
     "key": "ctrl+shift+h",
     "command": "-workbench.action.replaceInFiles"
+},
+{
+    "key": "alt+g alt+p",
+    "command": "git.push"
+},
+{
+    "key": "ctrl+alt+z",
+    "command": "workbench.action.toggleZenMode"
+},
+{
+    "key": "ctrl+k z",
+    "command": "-workbench.action.toggleZenMode"
 }
 ]
