@@ -58,4 +58,6 @@
 "vim.hlsearch": true,
 "vetur.format.defaultFormatter.html": "none",
 "vim.camelCaseMotion.enable": true,
+"editor.suggestSelection": "first",
+"vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
 }
