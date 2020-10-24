@@ -6,9 +6,7 @@
   "explorer.confirmDelete": false,
   "workbench.settings.openDefaultKeybindings": true,
   "explorer.confirmDragAndDrop": false,
-
   "editor.detectIndentation": false,
-
   "eslint.validate": [
     {
       "language": "vue"
@@ -30,7 +28,7 @@
     "vue": "html"
   },
   "window.zoomLevel": 0,
-  "workbench.colorTheme": "FlatUI Dark",
+  "workbench.colorTheme": "Palenight Theme",
   "javascript.updateImportsOnFileMove.enabled": "always",
   "git.enableSmartCommit": true,
   "files.autoSave": "afterDelay",
