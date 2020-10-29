@@ -35,5 +35,9 @@
       "${0}"
     ],
     "description": "Imports & mocks axios service"
+  },
+  "Insert () {}": {
+      "prefix": "ff",
+      "body": "() {${0}}","description": "Inserts () {}"
   }
 }

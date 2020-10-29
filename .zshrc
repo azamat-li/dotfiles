@@ -6,12 +6,12 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # If you come from bash you might have to change your $PATH.
-export PATH=$PATH:/snap/bin:$HOME/bin:/usr/local/bin:/usr/local/go/bin
+export PATH=$PATH:/snap/bin:$HOME/bin:/usr/local/bin:/usr/local/go/bin:$HOME/.local/bin
 
 # cdpath
 typeset -U path cdpath fpath
 setopt auto_cd
-cdpath=(~/ ~/Private-projects/   ~/Open-source-projects ~/Study $HOME/scripts /mnt $HOME/Study ~/Work ~/.oh-my-zsh ~/.oh-my-zsh/plugins ~/.oh-my-zsh/custom/plugins)
+cdpath=(~/ ~/Private-projects/   ~/Open-source-projects ~/Study $HOME/scripts /mnt $HOME/Study ~/Work ~/.oh-my-zsh )
 
 source ~/.zplug/init.zsh
 zstyle ':completion:*' group-name ''
@@ -173,7 +173,7 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(debian history git git-flow git-extras gh vue npm heroku yarn json-server vscode googler common-aliases travis docker docker-compose )
+plugins=(debian  composer  laravel laravel5 vagrant history git git-flow git-extras gh vue npm heroku yarn json-server vscode googler common-aliases travis docker docker-compose )
 
 source $ZSH/oh-my-zsh.sh
 
@@ -248,3 +248,10 @@ if
 
 # added by travis gem
 [ ! -s /home/ali/.travis/travis.sh ] || source /home/ali/.travis/travis.sh
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+export PATH="$HOME/.config/composer/vendor/bin:$PATH"
+
+alias -s {txt,gitignore,dockerignore}=vim
+alias -s md=typora
+alias -s {vue,js,ts,json}=code
