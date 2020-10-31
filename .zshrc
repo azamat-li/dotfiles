@@ -255,3 +255,4 @@ export PATH="$HOME/.config/composer/vendor/bin:$PATH"
 alias -s {txt,gitignore,dockerignore}=vim
 alias -s md=typora
 alias -s {vue,js,ts,json}=code
+  typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
