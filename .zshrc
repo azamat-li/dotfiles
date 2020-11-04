@@ -171,24 +171,6 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-plugins=(debian  composer  laravel laravel5  history vscode git git-flow git-extras gh vue npm heroku yarn  vscode  common-aliases travis docker docker-compose )
-=======
-=======
->>>>>>> 84decaf191ef7353dda2e0c062cde8ee1475324f
-=======
->>>>>>> refs/remotes/origin/master
-=======
->>>>>>> refs/remotes/origin/master
-=======
->>>>>>> 84decaf191ef7353dda2e0c062cde8ee1475324f
-=======
->>>>>>> 84decaf191ef7353dda2e0c062cde8ee1475324f
 
 plugins=(debian history vscode)
 
@@ -206,22 +188,6 @@ zplug "plugins/vagrant",   from:oh-my-zsh
 zplug "plugins/heroku",   from:oh-my-zsh
 zplug "plugins/laravel",   from:oh-my-zsh
 zplug "plugins/laravel5",   from:oh-my-zsh
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 84decaf191ef7353dda2e0c062cde8ee1475324f
-=======
->>>>>>> 84decaf191ef7353dda2e0c062cde8ee1475324f
-=======
->>>>>>> refs/remotes/origin/master
-=======
->>>>>>> refs/remotes/origin/master
-=======
->>>>>>> 84decaf191ef7353dda2e0c062cde8ee1475324f
-=======
->>>>>>> 84decaf191ef7353dda2e0c062cde8ee1475324f
 
 source $ZSH/oh-my-zsh.sh
 
