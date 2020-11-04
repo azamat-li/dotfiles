@@ -1,5 +1,7 @@
 [user]
 	name = Azamat-Alibaev
 	email = alibaevan3@gmail.com
-[credentials]
+[core]
+	editor = nvim
+[credential]
 	helper = cache

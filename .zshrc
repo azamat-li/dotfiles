@@ -6,7 +6,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # If you come from bash you might have to change your $PATH.
-export PATH=$PATH:/snap/bin:$HOME/bin:/usr/local/bin:/usr/local/go/bin:$HOME/.local/bin
+export PATH=$PATH:/snap/bin:$HOME/bin:/usr/local/bin:/usr/local/go/bin:/usr/bin:$HOME/.local/bin
 
 # cdpath
 typeset -U path cdpath fpath
@@ -105,15 +105,13 @@ zplug romkatv/powerlevel10k, as:theme, depth:1
                          echo; zplug install
                          fi
                          fi
-zplug load
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/ali/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="robbyrussell"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -147,7 +145,7 @@ ZSH_THEME="robbyrussell"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
- ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # COMPLETION_WAITING_DOTS="true"
@@ -173,7 +171,27 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
+<<<<<<< HEAD
 plugins=(debian  composer  laravel laravel5  history vscode git git-flow git-extras gh vue npm heroku yarn  vscode  common-aliases travis docker docker-compose )
+=======
+
+plugins=(debian history vscode)
+
+zplug "plugins/git",   from:oh-my-zsh
+zplug "plugins/git-flow",   from:oh-my-zsh
+zplug "plugins/git-extras",   from:oh-my-zsh
+zplug "plugins/composer",   from:oh-my-zsh
+zplug "plugins/npm",   from:oh-my-zsh
+zplug "plugins/yarn",   from:oh-my-zsh
+zplug "plugins/docker",   from:oh-my-zsh
+zplug "plugins/docker-compose",   from:oh-my-zsh
+zplug "plugins/common-aliases",   from:oh-my-zsh
+zplug "plugins/vscode",   from:oh-my-zsh
+zplug "plugins/vagrant",   from:oh-my-zsh
+zplug "plugins/heroku",   from:oh-my-zsh
+zplug "plugins/laravel",   from:oh-my-zsh
+zplug "plugins/laravel5",   from:oh-my-zsh
+>>>>>>> 84decaf191ef7353dda2e0c062cde8ee1475324f
 
 source $ZSH/oh-my-zsh.sh
 
@@ -183,7 +201,7 @@ source $ZSH/oh-my-zsh.sh
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
-# export LANG=en_US.UTF-8
+export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
@@ -205,7 +223,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 test -d ~/.linuxbrew && eval $(~/.linuxbrew/bin/brew shellenv)
 test -d /home/linuxbrew/.linuxbrew && eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
-alias c=clear
+alias cc=clear
 alias ag="alias | grep"
 alias atom="snap run atom"
 alias -g X="| xclip"
@@ -219,7 +237,6 @@ function remind {
     sleep $1 ; for i in 1 2 3 ; do spd-say -w $2 ; done
 }
 
-
 function checkinternet {
 while ping -c1 google.com &>/dev/null; do echo "internet is ok `date`"; spd-say -w 'internet is available' ; done
 }
@@ -229,7 +246,7 @@ while ping -c1 google.com &>/dev/null; do echo "internet is ok `date`"; spd-say 
 (( ! ${+functions[p10k]} )) || p10k finalize
 
 
- export NVM_DIR=~/.nvm
+export NVM_DIR=~/.nvm
   [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 export PATH="$HOME/.jenv/bin:$PATH"
 
@@ -255,4 +272,34 @@ export PATH="$HOME/.config/composer/vendor/bin:$PATH"
 alias -s {txt,gitignore,dockerignore}=vim
 alias -s md=typora
 alias -s {vue,js,ts,json}=code
-  typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
+
+typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
+
+
+# Prezto
+
+# Source Prezto.
+if [[ -s "$HOME/.zprezto/init.zsh" ]]; then
+  source "$HOME/.zprezto/init.zsh"
+fi
+
+
+# Plugins
+zplug "plugins/git",   from:oh-my-zsh
+zplug "zsh-users/zsh-autosuggestions"
+zplug "clvv/fasd"
+zplug "b4b4r07/enhancd"
+zplug "junegunn/fzf"
+zplug "Peltoche/lsd"
+zplug "g-plane/zsh-yarn-autocompletions"
+
+# Aliases
+alias untar='tar -zxvf' # Unpack .tar file
+alias wget='wget -c' # Download and resume
+alias getpass='openssl rand -base64 20' # Generate password
+alias sha='shasum -a 256' # Check shasum
+alias ping='ping -c 5' # Limit ping to 5'
+alias www='php -S localhost:8000' # Run local webserver
+
+zplug load
+(( ! ${+functions[p10k]} )) || p10k finalize

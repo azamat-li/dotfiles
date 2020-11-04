@@ -154,5 +154,15 @@
     "key": "ctrl+4",
     "command": "-editor.unfold",
     "when": "editorTextFocus && foldingEnabled"
+},
+{
+    "key": "alt+r alt+p",
+    "command": "search.action.replace",
+    "when": "matchFocus && replaceActive && searchViewletVisible"
+},
+{
+    "key": "ctrl+shift+1",
+    "command": "-search.action.replace",
+    "when": "matchFocus && replaceActive && searchViewletVisible"
 }
 ]
