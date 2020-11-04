@@ -173,7 +173,7 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(debian  composer  laravel laravel5 vagrant history git git-flow git-extras gh vue npm heroku yarn json-server vscode googler common-aliases travis docker docker-compose )
+plugins=(debian  composer  laravel laravel5  history vscode git git-flow git-extras gh vue npm heroku yarn  vscode  common-aliases travis docker docker-compose )
 
 source $ZSH/oh-my-zsh.sh
 
