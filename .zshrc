@@ -108,7 +108,7 @@ zplug romkatv/powerlevel10k, as:theme, depth:1
 zplug load
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/ali/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -183,7 +183,7 @@ source $ZSH/oh-my-zsh.sh
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
-# export LANG=en_US.UTF-8
+export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
@@ -229,7 +229,7 @@ while ping -c1 google.com &>/dev/null; do echo "internet is ok `date`"; spd-say 
 (( ! ${+functions[p10k]} )) || p10k finalize
 
 
- export NVM_DIR=~/.nvm
+export NVM_DIR=~/.nvm
   [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 export PATH="$HOME/.jenv/bin:$PATH"
 
