@@ -39,6 +39,7 @@ class ConfigureVercel extends Command
      */
     public function handle()
     {
+        $this->info('Configuring Vercel');
         File::copy('vendor/serverless/vercel_laravel/vercel.json', 'vercel.json');
         File::makeDirectory('api');
         File::copy('vendor/serverless/vercel_laravel/api/index.php', 'api/index.php');
