@@ -8,7 +8,8 @@ set nocompatible              			"be iMproved, required for Vundle, using latest
 set clipboard
 
 
-:
+" Delete & forget 
+nmap <Leader>d "_d
 
 
 "-----------For Php-----------"
