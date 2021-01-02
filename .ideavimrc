@@ -5,7 +5,7 @@ set backspace=indent,eol,start
 let mapleader = ';' 				"the default leader is \, but hitting space is easier
 "set number					"let's activate line numbers
 "set linespace=26				"gui vim spicific line space, e.g. vscode vim or ideavim
-"set nocompatible              			"be iMproved, required for Vundle, using latest Vim settings/options.
+set nocompatible              			"be iMproved, required for Vundle, using latest Vim settings/options.
 set surround
 
 
@@ -13,24 +13,19 @@ set surround
 
 "-----------For Php-----------"
 " Insert ';' to the end of line
-nmap tt A;<Esc>
+nmap ,, A;<Esc>
 
 
+" Delete char at the end of line
+nmap rr g_dl<Esc>
 
-
-" Delete ';' at the end of line
-nmap <Leader>E g_dh<Esc>
-
+" Go to next public 
+nmap gp /public
 
 "-----------Searching-----------"
 "
 set hlsearch			
 set incsearch
-
-
-
-
-
 
 
 
