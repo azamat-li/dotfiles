@@ -2,7 +2,7 @@
 syntax enable;
 
 set backspace=indent,eol,start
-let mapleader = ';' 				"the default leader is \, but hitting space is easier
+let mapleader = ' ' 				"the default leader is \, but hitting space is easier
 "set number					"let's activate line numbers
 "set linespace=26				"gui vim spicific line space, e.g. vscode vim or ideavim
 set nocompatible              			"be iMproved, required for Vundle, using latest Vim settings/options.
@@ -10,14 +10,16 @@ set surround
 
 
 
+"-----------Registers-----------"
 
 "-----------For Php-----------"
 " Insert ';' to the end of line
-nmap ,, A;<Esc>
-
+nmap ;; A;<Esc>
 
 " Delete char at the end of line
-nmap rr g_dl<Esc>
+nmap :: g_dl<Esc>
+
+
 
 " Go to next public 
 nmap gp /public
@@ -28,6 +30,12 @@ set hlsearch
 set incsearch
 
 
+
+
+"----------Blank lines-----------"
+
+" Emphasize line:  add blank line above & below"
+nmap pp O<Esc>jo<Esc>kA
 
 
 "----------Visually Prettier-----------"
@@ -70,20 +78,30 @@ nnoremap ta ea
 "Prepend to the beginnig of word, easier with AO - keyboard
 nnoremap tp bi
 
- 
-"-----------Visual Mode mappings---------"
-" Enter normal mode pressing tt  as alternative to hitting Escape button
-imap tt <Esc>					
 
+
+"-----------Visual Mode mappings---------"
+
+" Enter NORMAL mode pressing  as alternative to hitting Escape button
+imap  nn <Esc>
+imap  hh <Enter>
+map nn <Esc>
+
+imap <c-t> <Esc>
+
+" Insert arrow function"
+imap aa ()=>{}<Esc>i
+
+" Insert nested arrow function"
+imap an ()=>{ () => {} }<Esc>2hi
 
 
 "-----------Automatic-----------"
 "Automatic source of vimrc file on save
 augroup autosourcing
-	autocmd!
-	autocmd BufWritePost .vimrc source %
+autocmd!
+autocmd BufWritePost .vimrc source %
 augroup END
-
 
 
 
@@ -92,7 +110,8 @@ augroup END
 so ~/.vim/plugins.vim
 
 
-"----vim-surrond tweaking"
+"----Vim-surrond tweaking"
 
-" Surround tag
-nmap <Leader>st ySat
+" Surround tag shortcut
+nmap ts ysat
+
