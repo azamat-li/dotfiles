@@ -2,7 +2,7 @@
 export PATH=$HOME/bin:/usr/local/bin:$HOME/.local/bin/:/opt/PhpStorm-203.5981.175/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/ali/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -135,6 +135,7 @@ zplug "plugins/ubuntu", from:oh-my-zsh
 zplug "plugins/debian", from:oh-my-zsh
 zplug "plugins/laravel5", from:oh-my-zsh
 zplug "plugins/last-working-dir", from:oh-my-zsh
+zplug "plugins/docker", from:oh-my-zsh
 
 # Install plugins if there are plugins that have not been installed
 if ! zplug check --verbose; then
