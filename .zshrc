@@ -6,7 +6,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$PATH:$HOME/.composer/vendor/bin
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/admin/.oh-my-zsh"
@@ -116,4 +116,15 @@ export PATH="/usr/local/opt/curl/bin:$PATH"
 export LDFLAGS="-L/usr/local/opt/curl/lib"
 export CPPFLAGS="-I/usr/local/opt/curl/include"
 
+
+export PATH="/usr/local/opt/openldap/bin:$PATH"
+export PATH="/usr/local/opt/openldap/sbin:$PATH"
+
+export LDFLAGS="-L/usr/local/opt/openldap/lib"
+export CPPFLAGS="-I/usr/local/opt/openldap/include"
+
+#kubectl
+source <(kubectl completion zsh)
+
+alias phpu="./vendor/bin/phpunit"
 

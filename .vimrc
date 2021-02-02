@@ -8,6 +8,16 @@ set nocompatible              			"be iMproved, required for Vundle, using latest
 set clipboard
 set noswapfile  				"no swap as git is enough
 
+"  Tabs
+" tabstop:          Width of tab character
+" softtabstop:      Fine tunes the amount of white space to be added
+" shiftwidth        Determines the amount of whitespace to add in normal mode
+" expandtab:        When this option is enabled, vi will use spaces instead of tabs
+set tabstop =2
+set shiftwidth =2
+set shiftwidth =2
+set noexpandtab
+
 
 " Delete & forget 
 nmap <Leader>d "_d
@@ -18,14 +28,14 @@ nmap <Leader>d "_d
 nmap <Leader>e g_a;<Esc>
 
 
+" Delete ';' at the end of line
+nmap <Leader>E g_dl<Esc>
+
 
 " Surrond tag with new <div> tag 
 nmap <Leader>st ysit<div>
 
 
-
-" Delete ';' at the end of line
-nmap <Leader>E g_dh<Esc>
 
 
 "-----------Searching-----------"
@@ -107,3 +117,28 @@ augroup END
 
 " Surround tag
 nmap <Leader>st ySat
+
+
+"------------Code Snippets------------------
+nnoremap <Leader>test i<Return>/** @test */<Return> public function _()<Return> {<Return> } <Return><Esc>4k
+
+nnoremap <Leader>attr i$attributes<Space><Esc>
+nnoremap <Leader>desc icontext(' ', () => {<Return> beforeEach(() => {<Return> cy.visit('https://.test')<Return> })<Return> <Return> it('', () => { <Return> <Return> }) <Return>}) <Return>
+
+nmap <Leader>dett  <Return> it('', () => { <Return> <Return> }) <Return>}) <Return><Esc>
+
+
+
+"------------Split management-----------------
+set splitbelow
+set splitright
+nmap  <C-J> <C-W><C-J>
+nmap  <C-K> <C-W><C-K>
+nmap  <C-H> <C-W><C-H>
+nmap  <C-L> <C-W><C-L>
+
+
+
+
+
+
