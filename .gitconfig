@@ -1,7 +1,0 @@
-[user]
-	name = azamat-li
-	email = azamatalifullstack@gmail.com
-[core]
-	editor = nvim
-[credential]
-	helper = store
