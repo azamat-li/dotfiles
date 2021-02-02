@@ -2,11 +2,11 @@ syntax enable;
 
 set backspace=indent,eol,start
 let mapleader = ' ' 				"the default leader is \, but hitting space is easier
-set number					"let's activate line numbers
-set linespace=26				"gui vim spicific line space, e.g. vscode vim or ideavim
-set nocompatible              			"be iMproved, required for Vundle, using latest Vim settings/options.
+set number									"let's activate line numbers
+set linespace=26						"gui vim spicific line space, e.g. vscode vim or ideavim
+set nocompatible           	"use only vim
 set clipboard
-set noswapfile  				"no swap as git is enough
+set noswapfile  						"	no swap as git is enough
 
 "  Tabs
 " tabstop:          Width of tab character
@@ -110,7 +110,7 @@ augroup END
 
 "-----------Plugins-----------"
 " For loading plugins from ~/.vim directory
-"so ~/.vim/plugins.vim
+so ~/.vim/plugins.vim
 
 
 "----vim-surrond tweaking"
@@ -139,6 +139,17 @@ nmap  <C-L> <C-W><C-L>
 
 
 
+"------------Nerd tree-----------------
+nnoremap <leader>n :NERDTreeFocus<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
+
+" Start NERDTree when Vim is started without file arguments.
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists('s:std_in') | NERDTree | endif
+
+" Exit Vim if NERDTree is the only window left.
+autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() |
+    \ quit | endif
 
 
 

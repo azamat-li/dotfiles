@@ -12,9 +12,9 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
-Plugin 'tpope/vim-surround'
+" Plugin 'tpope/vim-surround'
 
-Plugin 'tpope/vim-vinegar'
+" Plugin 'tpope/vim-vinegar'
 
 " Project tree sidebar 
 Plugin 'preservim/nerdtree'
