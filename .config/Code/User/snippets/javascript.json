@@ -1,0 +1,43 @@
+{
+  "Import Vue test utils mount": {
+    "prefix": ["jm", "import-mount"],
+    "body": "import { mount } from '@vue/test-utils'",
+    "description": "Imports Vue test utils mount "
+  },
+  "Scaffold Jest Test Suit": {
+    "prefix": ["jt"],
+    "body": [
+      "import  ${1:Component}  from '@/components/${1:Component}.vue' ",
+      "",
+      "    describe('${1:Component}',() => {",
+      "         it('${2:When are given, they are correctly displayed}', () => {",
+      "",
+      "         const wrapper = mount(${1:Component})",
+      "",
+      "})",
+      "})"
+    ],
+    "description": "Scaffold Jest Test Suit"
+  },
+  "Scaffold  Jest Find Function": {
+    "prefix": "jf",
+    "body": [
+      "    const ${1:element} = wrapper.find('[data-testid=\"${1:element}\"]').element.textContent;"
+    ],
+    "description": "Scaffold  Jest Find Function"
+  },
+  "Imports & mocks axios service": {
+    "prefix": "jma",
+    "body": [
+      "import { ${1:FunctionToTest} } from '@/services/${2:axios}'",
+      "",
+      "jest.mock('@/services/${2:axios}')",
+      "${0}"
+    ],
+    "description": "Imports & mocks axios service"
+  },
+  "Insert () {}": {
+      "prefix": "ff",
+      "body": "() {${0}}","description": "Inserts () {}"
+  }
+}

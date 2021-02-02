@@ -1,0 +1,7 @@
+{
+  "Scaffold data-testid": {
+    "prefix": "dtid",
+    "body": ["data-testid=\"${1:data-testid}\""],
+    "description": "Scaffolds data-testid"
+  }
+}

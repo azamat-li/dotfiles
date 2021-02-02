@@ -1,0 +1,62 @@
+{
+  "vetur.grammar.customBlocks": {
+    "docs": "md",
+    "i18n": "json"
+  },
+  "explorer.confirmDelete": false,
+  "workbench.settings.openDefaultKeybindings": true,
+  "explorer.confirmDragAndDrop": false,
+  "editor.detectIndentation": false,
+  "eslint.validate": [
+      "vue" , "html" , "typescript"  
+  ],
+  "editor.formatOnSave": true,
+  "vetur.validation.template": false,
+"vetur.format.defaultFormatter.html": "none",
+"vetur.completion.useScaffoldSnippets": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "emmet.includeLanguages": {
+    "vue": "html"
+  },
+  "window.zoomLevel": 0,
+  "workbench.colorTheme": "Palenight Operator",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "git.enableSmartCommit": true,
+  "files.autoSave": "afterDelay",
+  "editor.snippetSuggestions": "top",
+  "emmet.extensionsPath": "~/.config/Code/User/snippets",
+  "editor.find.cursorMoveOnType": true,
+  "editor.fontFamily": "'source code pro",
+  "editor.fontWeight": 700,
+  "editor.fontSize": 16,
+  "editor.formatOnSaveMode": "file",
+  "breadcrumbs.enabled": true,
+  "editor.renderControlCharacters": true,
+  "editor.minimap.enabled": false,
+  "git.confirmSync": false,
+  "git.autofetch": true,
+  "vim.easymotionMarkerBackgroundColor": "#7e57c2",
+  "vim.easymotionMarkerYOffset": 4,
+  "vim.normalModeKeyBindingsNonRecursive": [
+      {
+          "before": [" "],
+          "after": ["leader", "leader", "leader", "b", "d", "w"],
+      }
+  ],
+  "vim.easymotion": true,
+"vim.hlsearch": true,
+"vim.camelCaseMotion.enable": true,
+"editor.suggestSelection": "first",
+"vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+"workbench.startupEditor": "newUntitledFile",
+"activationEvents": [
+  "workspaceContains:node_modules/.bin/jest",
+  "workspaceContains:node_modules/react-scripts/node_modules/.bin/jest",
+  "workspaceContains:node_modules/react-native-scripts",
+  "onCommand:io.orta.jest.start"
+],
+"workbench.editor.showTabs": true,
+"typescript.updateImportsOnFileMove.enabled": "always",
+}
