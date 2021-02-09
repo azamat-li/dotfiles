@@ -6,7 +6,8 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$PATH:$HOME/.composer/vendor/bin
+
+export PATH=$HOME/bin:/usr/local/bin:$PATH:$HOME/.composer/vendor/bin:/usr/bin/python:/Users/admin/Library/Python/3.9/lib/python/site-packages/pandas:/Applications/MacVim.app/Contents/bin
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/admin/.oh-my-zsh"
@@ -101,9 +102,10 @@ source $ZSH/oh-my-zsh.sh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+
+alias zshconfig="vim ~/.zshrc"
+alias ohmyzsh="vim ~/.oh-my-zsh"
+alias zzzz="find * -type f | fzf > selected"
 
 # Zplug 
 source ~/Zshs/zplug.zsh
@@ -126,5 +128,10 @@ export CPPFLAGS="-I/usr/local/opt/openldap/include"
 #kubectl
 source <(kubectl completion zsh)
 
+# Testing 
 alias phpu="./vendor/bin/phpunit"
+alias cypr="node_modules/.bin/cypress open"
 
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export PATH="/usr/local/sbin:$PATH"

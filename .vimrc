@@ -3,7 +3,7 @@ syntax enable;
 set backspace=indent,eol,start
 let mapleader = ' ' 				"the default leader is \, but hitting space is easier
 set number									"let's activate line numbers
-set linespace=26						"gui vim spicific line space, e.g. vscode vim or ideavim
+set linespace=8						"gui vim spicific line space, e.g. vscode vim or ideavim
 set nocompatible           	"use only vim
 set clipboard
 set noswapfile  						"	no swap as git is enough
@@ -32,31 +32,18 @@ nmap <Leader>e g_a;<Esc>
 nmap <Leader>E g_dl<Esc>
 
 
-" Surrond tag with new <div> tag 
-nmap <Leader>st ysit<div>
-
-
-
-
 "-----------Searching-----------"
 "
 set hlsearch			
 set incsearch
 
 
-
-
-
-
-
-
-
 "----------Visually Prettier-----------"
 colorscheme morning
 
-set t_CO=256					"Use 256 colors. This is useful for terminal Vim.
+"set t_CO=256					"Use 256 colors. This is useful for terminal Vim.
 
-set guifont=Fira_Code:h17
+"set guifont=Fira_Code
 
 "No scrollbars at all
 set guioptions-=l
@@ -103,20 +90,26 @@ imap ;; <Esc>
 augroup autosourcing
 	autocmd!
 	autocmd BufWritePost .vimrc source %
+"autocmd BufWritePost .vim/plugins.vim source %
 augroup END
 
 
 
 
-"-----------Plugins-----------"
+"-----------Plugins--------------"
 " For loading plugins from ~/.vim directory
 so ~/.vim/plugins.vim
 
 
-"----vim-surrond tweaking"
+"-----------Vim Surrond----------"
 
 " Surround tag
 nmap <Leader>st ySat
+
+" Surrond tag with new <div> tag 
+nmap <Leader>st ysit<div>
+
+
 
 
 "------------Code Snippets------------------
@@ -126,7 +119,7 @@ nnoremap <Leader>attr i$attributes<Space><Esc>
 nnoremap <Leader>desc icontext(' ', () => {<Return> beforeEach(() => {<Return> cy.visit('https://.test')<Return> })<Return> <Return> it('', () => { <Return> <Return> }) <Return>}) <Return>
 
 nmap <Leader>dett  <Return> it('', () => { <Return> <Return> }) <Return>}) <Return><Esc>
-
+nmap <Leader>dc icy.get('[data-cy=]')<c-e>
 
 
 "------------Split management-----------------
@@ -152,4 +145,7 @@ autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTr
     \ quit | endif
 
 
+
+"------------Postgre Sql-----------------
+let g:sql_type_default = 'pgsql'
 
