@@ -39,11 +39,17 @@ set incsearch
 
 
 "----------Visually Prettier-----------"
-colorscheme morning
+" Theme
+autocmd vimenter * ++nested colorscheme gruvbox
+
+" colorscheme morning
 
 "set t_CO=256					"Use 256 colors. This is useful for terminal Vim.
 
-"set guifont=Fira_Code
+" set guifont=Fira_Code
+
+
+nmap <Leader>rb :set gfn:Monaco:h20<cr>
 
 "No scrollbars at all
 set guioptions-=l
@@ -125,7 +131,7 @@ nmap <Leader>dc icy.get('[data-cy=]')<c-e>
 "------------Split management-----------------
 set splitbelow
 set splitright
-nmap  <C-J> <C-W><C-J>
+nmap  <C-J> <C-W><C-J>;
 nmap  <C-K> <C-W><C-K>
 nmap  <C-H> <C-W><C-H>
 nmap  <C-L> <C-W><C-L>
@@ -148,4 +154,27 @@ autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTr
 
 "------------Postgre Sql-----------------
 let g:sql_type_default = 'pgsql'
+
+
+
+"------------Cyrillic Vim-----------------
+source ~/Jekylls/cyrillic.vim/plugin/cyrillic.vim
+nmap <Leader>c :e~/Jekylls/cyrillic.vim/plugin/cyrillic.vim<cr>
+
+
+
+
+"------------Quick Search-----------------
+nmap <Leader>f :tag<space>
+nmap <Leader>t :ts<space>
+nmap <Leader>l :bn<cr>
+nmap <Leader>h :bp<cr>
+
+" Motions
+nmap <Leader>s :w<cr>
+
+" Notes and Tips
+" control ]  go to method declaration
+" cortrol ^  go back
+"
 
