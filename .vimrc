@@ -1,5 +1,8 @@
 syntax enable;
 
+" AO Russian support langmap
+set langmap=АОЕУИДХТНСПЫФГЦРЛЙКЬБМВЖЗ;AOEUIDHTNSPYFGCRLJKXBMWVZ,аоеуидхтнспыфгцрлйкьбмвжз;aoeuidhtnspyfgcrljkxbmwvz
+
 set backspace=indent,eol,start
 let mapleader = ' ' 				"the default leader is \, but hitting space is easier
 set number									"let's activate line numbers
@@ -154,13 +157,6 @@ autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTr
 
 "------------Postgre Sql-----------------
 let g:sql_type_default = 'pgsql'
-
-
-
-"------------Cyrillic Vim-----------------
-source ~/Jekylls/cyrillic.vim/plugin/cyrillic.vim
-nmap <Leader>c :e~/Jekylls/cyrillic.vim/plugin/cyrillic.vim<cr>
-
 
 
 

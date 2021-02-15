@@ -132,6 +132,16 @@ source <(kubectl completion zsh)
 alias phpu="./vendor/bin/phpunit"
 alias cypr="node_modules/.bin/cypress open"
 
+alias typora=/Applications/Typora.app/Contents/MacOS/Typora
+
+
+alias -s md='typora'
+alias -s {zip,ZIP}="unzip -l"
+alias -s md='typora'
+alias -s {zip,ZIP}="unzip -l"
+alias -s html='background chromium'
+alias -s {pdf,PDF}='background mupdf'
+
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export PATH="/usr/local/sbin:$PATH"
