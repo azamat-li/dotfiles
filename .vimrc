@@ -46,10 +46,12 @@ set incsearch
 autocmd vimenter * ++nested colorscheme gruvbox
 
 " colorscheme morning
+" colorscheme bluewery-light
+let g:lightline = { 'colorscheme': 'bluewery_light' }
 
 "set t_CO=256					"Use 256 colors. This is useful for terminal Vim.
 
-" set guifont=Fira_Code
+set guifont=Monaco:h16
 
 
 nmap <Leader>rb :set gfn:Monaco:h20<cr>
@@ -89,10 +91,9 @@ nnoremap <Leader>p bi
 
  
 "-----------Visual Mode mappings---------"
-" Enter normal mode pressing ;;  as alternative to hitting Escape button
-imap ;; <Esc>					
-
-
+" Enter normal mode pressing .. [ double dot ]  as alternative to hitting Escape button
+imap .. <Esc>					
+imap ww <Esc>					
 
 "-----------Automatic-----------"
 "Automatic source of vimrc file on save
@@ -174,3 +175,17 @@ nmap <Leader>s :w<cr>
 " cortrol ^  go back
 "
 
+
+"------------Ctrl P-----------------
+nnoremap <Leader>g :CtrlPBuffer
+nnoremap <Leader>G :CtrlP
+
+
+"------------Personal abbreviations-----------------
+iabbrev nname Gabdulgazim Galiullin
+iabbrev mmail azamatalifullstack@gmail.com
+
+
+"------------Simple Vim commentator version-----------------
+:autocmd FileType javascript nnoremap <buffer> <localleader>c I//<esc>
+:autocmd FileType python     nnoremap <buffer> <localleader>c I#<esc>

@@ -17,13 +17,14 @@ Plugin 'VundleVim/Vundle.vim' " required
 Plugin 'preservim/nerdtree'
 
 " Theme
-Plugin 'morhetz/gruvbox' 
+" Plugin 'morhetz/gruvbox' 
+Plugin 'relastle/bluewery.vim'
+
+Plugin 'ctrlpvim/ctrlp.vim'
 
 Plugin  'lifepillar/pgsql.vim'
 
 Plugin 'vim-scripts/browser.vim'
-
-" Plugin 'gabdulgazim/cyrillic.vim'
 
 Plugin 'mg979/vim-visual-multi'
 

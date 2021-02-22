@@ -128,10 +128,12 @@ export CPPFLAGS="-I/usr/local/opt/openldap/include"
 #kubectl
 source <(kubectl completion zsh)
 
+# App launch
 # Testing 
 alias phpu="./vendor/bin/phpunit"
 alias cypr="node_modules/.bin/cypress open"
 
+# Markdown editing
 alias typora=/Applications/Typora.app/Contents/MacOS/Typora
 
 
@@ -145,3 +147,7 @@ alias -s {pdf,PDF}='background mupdf'
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export PATH="/usr/local/sbin:$PATH"
+
+# theme related
+typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
+
