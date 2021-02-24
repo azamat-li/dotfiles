@@ -126,7 +126,7 @@ export LDFLAGS="-L/usr/local/opt/openldap/lib"
 export CPPFLAGS="-I/usr/local/opt/openldap/include"
 
 #kubectl
-source <(kubectl completion zsh)
+# source <(kubectl completion zsh)
 
 # App launch
 # Testing 
@@ -150,4 +150,6 @@ export PATH="/usr/local/sbin:$PATH"
 
 # theme related
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
+
+alias shome="pwd | HOME=" # set home dir to current dir
 

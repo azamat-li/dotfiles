@@ -49,12 +49,9 @@ autocmd vimenter * ++nested colorscheme gruvbox
 " colorscheme bluewery-light
 let g:lightline = { 'colorscheme': 'bluewery_light' }
 
-"set t_CO=256					"Use 256 colors. This is useful for terminal Vim.
+set t_CO=256					"Use 256 colors. This is useful for terminal Vim.
 
 set guifont=Monaco:h16
-
-
-nmap <Leader>rb :set gfn:Monaco:h20<cr>
 
 "No scrollbars at all
 set guioptions-=l
@@ -78,22 +75,16 @@ nmap <Leader>ez :tabedit ~/.zshrc<cr>
 "Simple search highlight removal
 nmap <Leader>, :nohlsearch<cr>
 
-nmap <Leader>h :w<cr>
 
+"-----------i18n attempts---------"
+nnoremap <Leader>s :w!<cr>
 
-"----To Start editing------'
+"-----------i18n attempts---------"
+nnoremap <Leader>ц :w!<cr>
 
-"Append to the end of word
-nnoremap <Leader>a ea
-
-"Prepend to the beginnig of word
-nnoremap <Leader>p bi
 
  
 "-----------Visual Mode mappings---------"
-" Enter normal mode pressing .. [ double dot ]  as alternative to hitting Escape button
-imap .. <Esc>					
-imap ww <Esc>					
 
 "-----------Automatic-----------"
 "Automatic source of vimrc file on save
