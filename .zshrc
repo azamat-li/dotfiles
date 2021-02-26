@@ -139,8 +139,6 @@ alias typora=/Applications/Typora.app/Contents/MacOS/Typora
 
 alias -s md='typora'
 alias -s {zip,ZIP}="unzip -l"
-alias -s md='typora'
-alias -s {zip,ZIP}="unzip -l"
 alias -s html='background chromium'
 alias -s {pdf,PDF}='background mupdf'
 
@@ -153,3 +151,14 @@ typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 
 alias shome="pwd | HOME=" # set home dir to current dir
 
+# docker
+alias dm="docker-machine"
+# make docker client communicate with docker server
+eval $(docker-machine env default)
+alias drma="docker container rm $(docker container ls -aq)"
+
+# hide legacy commands
+export DOCKER_HIDE_LEGACY_COMMANDS=true
+
+alias -g ii="-it"  # interactive, use  it for e.g. sh
+alias -g pp="-p 80:80" # expose http port, use for running e.g. nginx

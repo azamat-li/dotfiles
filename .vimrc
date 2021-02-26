@@ -6,7 +6,7 @@ set langmap=АОЕУИДХТНСПЫФГЦРЛЙКЬБМВЖЗ;AOEUIDHTNSPYFGCRL
 set backspace=indent,eol,start
 let mapleader = ' ' 				"the default leader is \, but hitting space is easier
 set number									"let's activate line numbers
-set linespace=8						"gui vim spicific line space, e.g. vscode vim or ideavim
+set linespace=0						"gui vim spicific line space, e.g. vscode vim or ideavim
 set nocompatible           	"use only vim
 set clipboard
 set noswapfile  						"	no swap as git is enough
@@ -17,8 +17,7 @@ set noswapfile  						"	no swap as git is enough
 " shiftwidth        Determines the amount of whitespace to add in normal mode
 " expandtab:        When this option is enabled, vi will use spaces instead of tabs
 set tabstop =2
-set shiftwidth =2
-set shiftwidth =2
+set shiftwidth = 0
 set noexpandtab
 
 
@@ -51,15 +50,14 @@ let g:lightline = { 'colorscheme': 'bluewery_light' }
 
 set t_CO=256					"Use 256 colors. This is useful for terminal Vim.
 
-set guifont=Monaco:h16
+set guifont=Optima-BoldItalic:h14
+"set guifont=Optima-Italic:h14
 
 "No scrollbars at all
 set guioptions-=l
-set guioptions-=L
+set guioptions-=L;
 set guioptions-=r
 set guioptions-=R
-
-
 
 "-----------Normal Mode Mappings-----------"
 
@@ -161,10 +159,6 @@ nmap <Leader>h :bp<cr>
 " Motions
 nmap <Leader>s :w<cr>
 
-" Notes and Tips
-" control ]  go to method declaration
-" cortrol ^  go back
-"
 
 
 "------------Ctrl P-----------------
@@ -180,3 +174,10 @@ iabbrev mmail azamatalifullstack@gmail.com
 "------------Simple Vim commentator version-----------------
 :autocmd FileType javascript nnoremap <buffer> <localleader>c I//<esc>
 :autocmd FileType python     nnoremap <buffer> <localleader>c I#<esc>
+
+
+
+" Notes and Tips
+" control ]  go to method declaration
+" cortrol ^  go back
+" choose font   set guifont:* 
