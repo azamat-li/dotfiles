@@ -162,3 +162,7 @@ export DOCKER_HIDE_LEGACY_COMMANDS=true
 
 alias -g ii="-it"  # interactive, use  it for e.g. sh
 alias -g pp="-p 80:80" # expose http port, use for running e.g. nginx
+
+
+# notes
+# ps -ef # get all processes
