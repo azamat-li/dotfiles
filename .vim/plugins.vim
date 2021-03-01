@@ -31,6 +31,12 @@ Plugin 'mg979/vim-visual-multi'
 Plugin 'ycm-core/YouCompleteMe'
 
 
+"laravel
+Plugin 'noahfrederick/vim-composer'
+
+"Plug 'noahfrederick/vim-laravel'
+
+
 
 
 

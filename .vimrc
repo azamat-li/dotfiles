@@ -16,22 +16,17 @@ set noswapfile  						"	no swap as git is enough
 " softtabstop:      Fine tunes the amount of white space to be added
 " shiftwidth        Determines the amount of whitespace to add in normal mode
 " expandtab:        When this option is enabled, vi will use spaces instead of tabs
-set tabstop =2
-set shiftwidth = 0
-set noexpandtab
+" set tabstop =2
+" set shiftwidth = 2
+" set noexpandtab
+set ts=2
+set sts=2
+set et     "expand tabs to spaces
 
 
 " Delete & forget 
 nmap <Leader>d "_d
 
-
-"-----------For Php-----------"
-" Insert ';' to the end of line
-nmap <Leader>e g_a;<Esc>
-
-
-" Delete ';' at the end of line
-nmap <Leader>E g_dl<Esc>
 
 
 "-----------Searching-----------"
@@ -42,13 +37,16 @@ set incsearch
 
 "----------Visually Prettier-----------"
 " Theme
-autocmd vimenter * ++nested colorscheme gruvbox
+" autocmd vimenter * ++nested colorscheme gruvbox
 
 " colorscheme morning
 " colorscheme bluewery-light
 let g:lightline = { 'colorscheme': 'bluewery_light' }
 
 set t_CO=256					"Use 256 colors. This is useful for terminal Vim.
+
+" set your colorscheme, developer
+colorscheme bluewery-light
 
 set guifont=Optima-BoldItalic:h14
 "set guifont=Optima-Italic:h14
@@ -72,7 +70,6 @@ nmap <Leader>ez :tabedit ~/.zshrc<cr>
 
 "Simple search highlight removal
 nmap <Leader>, :nohlsearch<cr>
-
 
 "-----------i18n attempts---------"
 nnoremap <Leader>s :w!<cr>
@@ -170,6 +167,33 @@ nnoremap <Leader>G :CtrlP
 iabbrev nname Gabdulgazim Galiullin
 iabbrev mmail azamatalifullstack@gmail.com
 
+
+
+
+
+"------------Use Cypress, tester-----------------
+iabbrev ddCC  '[data-cy=]'
+iabbrev ddcc  data-cy=""
+
+
+"------------Type easier, scaffolder-----------------
+iabbrev desc description
+iabbrev desc description
+
+
+
+"------------Use Laravel, developer-----------------
+" Edit  routes of project, router
+nnoremap <Leader>lr :tabedit ./routes/web.php<cr>
+
+" Setup environment of project, deployer
+nnoremap <Leader>ls :tabedit .env<cr>
+ 
+" Customize Css of project, designer
+nnoremap <Leader>ld :NERDTree ./resources/css/<cr>
+
+" Write Cypress tests, tester
+nnoremap <Leader>lt :NERDTree ./cypress/integration/<cr>
 
 "------------Simple Vim commentator version-----------------
 :autocmd FileType javascript nnoremap <buffer> <localleader>c I//<esc>
