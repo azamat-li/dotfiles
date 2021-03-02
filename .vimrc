@@ -19,9 +19,27 @@ set noswapfile  						"	no swap as git is enough
 " set tabstop =2
 " set shiftwidth = 2
 " set noexpandtab
-set ts=2
-set sts=2
-set et     "expand tabs to spaces
+set softtabstop=4               " when hitting <BS>, pretend like a tab is removed, even if spaces
+set expandtab                   " expand tabs by default (overloadable per file type later)
+set shiftwidth=4                " number of spaces to use for autoindenting
+set shiftround                  " use multiple of shiftwidth when indenting with '<' and '>'
+set autoindent                  " always set autoindenting on
+set copyindent                  " copy the previous indentation on autoindenting
+set ignorecase                  " ignore case when searching
+set smartcase                   " ignore case if search pattern is all lowercase,
+  
+
+"Resize vsplit
+nmap <C-v> :vertical resize +5<cr>
+nmap 25 :vertical resize 40<cr>
+nmap 50 <c-w>=
+nmap 75 :vertical resize 120<cr>
+
+
+"-----------CtrlP staff-----------"
+" I don't want to pull up these folders/files when calling CtrlP
+set wildignore+=*/vendor/**
+set wildignore+=*/public/forum/**
 
 
 " Delete & forget 
@@ -169,8 +187,6 @@ iabbrev mmail azamatalifullstack@gmail.com
 
 
 
-
-
 "------------Use Cypress, tester-----------------
 iabbrev ddCC  '[data-cy=]'
 iabbrev ddcc  data-cy=""
@@ -180,20 +196,15 @@ iabbrev ddcc  data-cy=""
 iabbrev desc description
 iabbrev desc description
 
+    
+" Move inside laravel
+source ~/.vim/bundle/mi-laravel/plugin/mi-laravel.vim
 
 
-"------------Use Laravel, developer-----------------
-" Edit  routes of project, router
-nnoremap <Leader>lr :tabedit ./routes/web.php<cr>
-
-" Setup environment of project, deployer
-nnoremap <Leader>ls :tabedit .env<cr>
- 
-" Customize Css of project, designer
-nnoremap <Leader>ld :NERDTree ./resources/css/<cr>
-
-" Write Cypress tests, tester
-nnoremap <Leader>lt :NERDTree ./cypress/integration/<cr>
+" Use folding, php developer
+" Use rayburgemeestre/phpfolding.vim
+map <F6> <Esc>:EnablePHPFolds<Cr>
+map <F7> <Esc>:DisablePHPFolds<Cr>
 
 "------------Simple Vim commentator version-----------------
 :autocmd FileType javascript nnoremap <buffer> <localleader>c I//<esc>
