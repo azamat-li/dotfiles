@@ -106,6 +106,7 @@ source $ZSH/oh-my-zsh.sh
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 alias zzzz="find * -type f | fzf > selected"
+alias ag="alias | grep"
 
 # Zplug 
 source ~/Zshs/zplug.zsh
