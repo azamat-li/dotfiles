@@ -30,11 +30,18 @@ Plugin 'mg979/vim-visual-multi'
 
 Plugin 'ycm-core/YouCompleteMe'
 
+" Php developer
+Plugin 'StanAngeloff/php.vim'
+
+" Indent your files, php developer
+Plugin  '2072/PHP-Indenting-for-VIm'
+
+
 
 "laravel
-Plugin 'noahfrederick/vim-composer'
+"Plugin 'noahfrederick/vim-composer'
 
-"Plug 'noahfrederick/vim-laravel'
+"Plugin 'noahfrederick/vim-laravel'
 
 
 
