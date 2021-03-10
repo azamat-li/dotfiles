@@ -7,7 +7,7 @@ fi
 
 # If you come from bash you might have to change your $PATH.
 
-export PATH=$HOME/bin:/usr/local/bin:$PATH:$HOME/.composer/vendor/bin:/usr/bin/python:/Users/admin/Library/Python/3.9/lib/python/site-packages/pandas:/Applications/MacVim.app/Contents/bin
+export PATH=$HOME/bin:/usr/local/bin:$PATH:$HOME/.composer/vendor/bin:/usr/bin/python:/Users/admin/Library/Python/3.9/lib/python/site-packages/pandas:/Applications/MacVim.app/Contents/bin:/usr/local/Cellar/golang-migrate/4.14.1/bin
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/admin/.oh-my-zsh"
@@ -164,6 +164,8 @@ export DOCKER_HIDE_LEGACY_COMMANDS=true
 alias -g ii="-it"  # interactive, use  it for e.g. sh
 alias -g pp="-p 80:80" # expose http port, use for running e.g. nginx
 
+# Git
+alias gcam=gcm # override dangerous git command  
 
 # notes
 # ps -ef # get all processes
