@@ -1,7 +1,8 @@
+
 syntax enable;
 
 " AO Russian support langmap
-set langmap=АОЕУИДХТНСПЫФГЦРЛЙКЬБМВЖЗ;AOEUIDHTNSPYFGCRLJKXBMWVZ,аоеуидхтнспыфгцрлйкьбмвжз;aoeuidhtnspyfgcrljkxbmwvz
+"set langmap=АОЕУИДХТНСПЫФГЦРЛЙКЬБМВЖЗ;AOEUIDHTNSPYFGCRLJKXBMWVZ,аоеуидхтнспыфгцрлйкьбмвжз;aoeuidhtnspyfgcrljkxbmwvz
 
 set backspace=indent,eol,start
 let mapleader = ' ' 				"the default leader is \, but hitting space is easier
@@ -10,7 +11,7 @@ set linespace=0						"gui vim spicific line space, e.g. vscode vim or ideavim
 set nocompatible           	"use only vim
 set clipboard
 set noswapfile  						"	no swap as git is enough
-
+set so=7
 "  Tabs
 " tabstop:          Width of tab character
 " softtabstop:      Fine tunes the amount of white space to be added
@@ -27,6 +28,8 @@ set autoindent                  " always set autoindenting on
 set copyindent                  " copy the previous indentation on autoindenting
 set ignorecase                  " ignore case when searching
 set smartcase                   " ignore case if search pattern is all lowercase,
+
+nnoremap <C->
   
 
 "Resize vsplit
@@ -145,7 +148,6 @@ nmap  <C-H> <C-W><C-H>
 nmap  <C-L> <C-W><C-L>
 
 
-
 "------------Nerd tree-----------------
 nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
@@ -206,6 +208,10 @@ source ~/.vim/bundle/mi-laravel/plugin/mi-laravel.vim
 map <F6> <Esc>:EnablePHPFolds<Cr>
 map <F7> <Esc>:DisablePHPFolds<Cr>
 
+
+" Test your server, php unit tester
+iabbrev sskip $this->markTestSkipped('must be revisited.');
+
 "------------Simple Vim commentator version-----------------
 :autocmd FileType javascript nnoremap <buffer> <localleader>c I//<esc>
 :autocmd FileType python     nnoremap <buffer> <localleader>c I#<esc>
@@ -216,3 +222,10 @@ map <F7> <Esc>:DisablePHPFolds<Cr>
 " control ]  go to method declaration
 " cortrol ^  go back
 " choose font   set guifont:* 
+"
+" Replace in dir
+" :args spec/javascripts/**/*.* 
+" silent! argdo %s/foo/bar/g | update
+
+
+
